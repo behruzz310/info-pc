@@ -1,0 +1,170 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #07111f;
+    color: white;
+    line-height: 1.7;
+}
+
+header {
+    background: #0d1b2e;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 23px;
+    font-weight: bold;
+    color: #38bdf8;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+.hero {
+    text-align: center;
+    padding: 110px 20px;
+    background: linear-gradient(120deg, #102b4c, #07111f);
+}
+
+.hero h1 {
+    font-size: 48px;
+    color: #38bdf8;
+}
+
+.hero p {
+    font-size: 19px;
+    margin: 20px auto;
+    max-width: 700px;
+}
+
+.btn, button {
+    display: inline-block;
+    background: #0284c7;
+    padding: 12px 25px;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.btn:hover, button:hover {
+    background: #0369a1;
+}
+
+section {
+    padding: 65px 8%;
+}
+
+h2 {
+    text-align: center;
+    font-size: 32px;
+    color: #38bdf8;
+    margin-bottom: 30px;
+}
+
+.intro, .conclusion p {
+    text-align: center;
+    max-width: 850px;
+    margin: auto;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 22px;
+}
+
+.card, .item {
+    background: #12243a;
+    padding: 23px;
+    border-radius: 13px;
+    border: 1px solid #24415f;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+    border-color: #38bdf8;
+}
+
+.card h3, .item h3 {
+    color: #38bdf8;
+    margin-bottom: 12px;
+}
+
+.card p, .item p {
+    color: #d2deec;
+}
+
+.emoji {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.timeline {
+    max-width: 850px;
+    margin: auto;
+}
+
+.item {
+    margin: 15px 0;
+    border-left: 4px solid #38bdf8;
+}
+
+.conclusion {
+    text-align: center;
+}
+
+#fact {
+    margin-top: 20px;
+    color: #38bdf8;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    background: #0d1b2e;
+    padding: 25px;
+    color: #aabbd0;
+}
+
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    header {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    nav a {
+        display: inline-block;
+        font-size: 14px;
+    }
+}
